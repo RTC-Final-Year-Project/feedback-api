@@ -40,7 +40,10 @@ def Rule_CK_tests_command(type):
         sys.exit(pytest.main(["-k", "Integration_Tests"]))
     else:
         sys.exit(pytest.main(["-k", "Tests"]))
-    
+
+@test.command("meta", help="Run meta rule tests")
+def Rule_CK_tests_command():
+    sys.exit(pytest.main(["-k", "Rules_Meta"]))    
     
     
 
