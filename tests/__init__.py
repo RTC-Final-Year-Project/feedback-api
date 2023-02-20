@@ -1,1 +1,1 @@
-from .asses_rules import *
+from .asses_rules import AssessTestCases

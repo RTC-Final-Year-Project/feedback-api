@@ -1,9 +1,7 @@
-import unittest
+from .asses_rules import AssessTestCases
 
 from feedback_module.spelling_rules import Rule_CK
 
-from .asses_rules import assess_unit_rule_combinations
-from .asses_rules import assess_integration_rule_combinations
 
 rule = Rule_CK
 
@@ -22,10 +20,12 @@ combinations_that_violate_rule = combinations_detect_rule = [
     ["lucky", "luky"],
 ]
 
-class Rule_CK_Unit_Tests(unittest.TestCase):
-    def test_rule_correctness(self):
-        assess_unit_rule_combinations(rule, combinations_that_follow_rule, combinations_that_violate_rule)
-    
-class Rule_CK_Integration_Tests(unittest.TestCase):
-    def test_rule_integration(self):
-        assess_integration_rule_combinations(rule, combinations_ignore_rule, combinations_detect_rule)
+class Rule_CK_Unit_Tests(AssessTestCases.UnitTestCases):
+    rule = rule
+    combinations_that_follow_rule = combinations_that_follow_rule
+    combinations_that_violate_rule = combinations_that_violate_rule
+
+class Rule_CK_Integration_Tests(AssessTestCases.IntegrationTestCases):
+    rule = rule
+    combinations_ignore_rule = combinations_ignore_rule
+    combinations_detect_rule = combinations_detect_rule
