@@ -1,4 +1,4 @@
-from .asses_rules import AssessTestCases
+from .AssessTestCases import AssessTestCases
 
 from feedback_module.spelling_rules import Rule_Ending_Vowel_and_Y_Add_Suffix_Ed_Ing_Only
 
