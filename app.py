@@ -5,11 +5,13 @@ from feedback_module import FeedbackModule
 
 FM = FeedbackModule()
 
-app = Flask(__name__)
-CORS(app)
+def create_app(config={}):
+    app = Flask(__name__)
+    CORS(app)
+    return app
 
 # API Route
-
+app = create_app()
 
 @app.route("/", methods=["GET"])
 # @cross_origin #cors
@@ -32,7 +34,3 @@ def handle_feedback():
     response = FM.check_spelling(spelling_word, attempted_spelling, student_id, student_age)
 
     return jsonify(response)
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
