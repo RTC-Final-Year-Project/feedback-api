@@ -39,10 +39,10 @@ class AssessTestCases():
             combinations_violate_rule = len(failed_to_violate_list) == 0
             
             if not combinations_follow_rule:
-                print("\n - ".join([self.rule.__name__ + " unit test failed for words that are supposed to follow rule:\n"] + failed_to_follow_list) + "\n")
+                print("\n - ".join(["[" + str(self.rule.id) + ":" + self.rule.__name__ + "]: unit test failed for words that are supposed to follow rule:\n"] + failed_to_follow_list) + "\n")
             
             if not combinations_violate_rule:
-                print("\n - ".join([self.rule.__name__ + " unit test failed for words that are supposed to violate rule:\n"] + failed_to_violate_list) + "\n")
+                print("\n - ".join(["[" + str(self.rule.id) + ":" + self.rule.__name__ + "]: unit test failed for words that are supposed to violate rule:\n"] + failed_to_violate_list) + "\n")
                 
             assert combinations_follow_rule == True
             assert combinations_violate_rule == True
@@ -82,9 +82,9 @@ class AssessTestCases():
             combinations_violate_rule = len(failed_to_violate_list) == 0
             
             if not combinations_follow_rule:
-                print(self.rule.__name__ + " integration test failed for words that are supposed to ignore this rule: " + "\n".join(failed_to_follow_list))
+                print("\n".join(["[" + str(self.rule.id) + ":" + self.rule.__name__ + "]: integration test failed for words that are supposed to ignore this rule: "] + failed_to_follow_list) + "\n")
             if not combinations_violate_rule:
-                print("\n".join(self.rule.__name__ + " integration test failed for words that are supposed to detect this rule: " + failed_to_violate_list) + "\n")
+                print("\n".join(["[" + str(self.rule.id) + ":" + self.rule.__name__ + "]: integration test failed for words that are supposed to detect this rule: "] + failed_to_violate_list) + "\n")
                     
             assert combinations_follow_rule == True
             assert combinations_violate_rule == True
