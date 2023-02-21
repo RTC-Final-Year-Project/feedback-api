@@ -12,9 +12,8 @@ from .Rule_CK import *
 from .Rule_K import *
 from .Rule_Ending_In_E_Y import *
 from .Rule_Creole_Ending_In_I_N_G import *
-from .Rule_Creole_Th_Stopping import *
-# from .Rule_Creole_Th_Stopping_D import *
-# from .Rule_Creole_Th_Stopping_T import *
+from .Rule_Creole_Th_Stopping_D import *
+from .Rule_Creole_Th_Stopping_T import *
 
 rules_list = [
   Rule_Plural_F_Or_Fe_To_Ves,
@@ -31,9 +30,8 @@ rules_list = [
   Rule_K,
   Rule_Ending_In_E_Y,
   Rule_Creole_Ending_In_I_N_G,
-  Rule_Creole_Th_Stopping,
-  # Rule_Creole_Th_Stopping_D,
-  # Rule_Creole_Th_Stopping_T,
+  Rule_Creole_Th_Stopping_D,
+  Rule_Creole_Th_Stopping_T,
 ]
 
 # check for one letter off: [receive: receiv]
