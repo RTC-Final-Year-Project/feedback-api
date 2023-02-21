@@ -2,7 +2,7 @@ from .Rule import Rule
 
 class Rule_Plural_F_Or_Fe_To_Ves(Rule):
     id = 5
-    rule = "To form the plural for nouns ending in ‘f’ or ‘fe’, change the ‘f’ or ‘fe’ to ‘v’ and then add ‘es’"
+    rule = "To form the plural for nouns ending in 'f' or 'fe', change the 'f' or 'fe' to 'v' and then add 'es'"
     examples = "life/lives, knife/knives, wolf/wolves"
     
     @staticmethod
