@@ -4,7 +4,7 @@ from .Rule import Rule
 
 class Rule_K(Rule):
   id = 9
-  rule = "The letter ‘k’ is used on its own when the short vowel sound is followed by a consonant or when preceded by a long vowel sound"
+  rule = "The letter 'k' is used on its own when the short vowel sound is followed by a consonant or when preceded by a long vowel sound"
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):
