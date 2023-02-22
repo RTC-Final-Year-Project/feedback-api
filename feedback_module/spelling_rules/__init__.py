@@ -13,14 +13,14 @@ from .Rule_K import *
 from .Rule_Ending_In_E_Y import *
 from .Rule_Creole_Ending_In_I_N_G import *
 from .Rule_Creole_Th_Stopping import *
-# from .Rule_Creole_Th_Stopping_D import *
-# from .Rule_Creole_Th_Stopping_T import *
 from .Rule_Last_Consonant_Is_Doubled import *
 from .Rule_Plural_By_Adding_S import *
 from .Rule_Drop_E import *
 from .Rule_Change_Y_To_I import *
 from .Rule_Change_Y_To_I_Exception import *
 from .Rule_V_J_K_W_X_never_doubled import *
+from .Rule_Creole_Th_Stopping_D import *
+from .Rule_Creole_Th_Stopping_T import *
 
 rules_list = [
   Rule_Plural_F_Or_Fe_To_Ves,
@@ -38,14 +38,14 @@ rules_list = [
   Rule_Ending_In_E_Y,
   Rule_Creole_Ending_In_I_N_G,
   Rule_Creole_Th_Stopping,
-  # Rule_Creole_Th_Stopping_D,
-  # Rule_Creole_Th_Stopping_T,
   Rule_Last_Consonant_Is_Doubled,
   Rule_Plural_By_Adding_S,
   Rule_Drop_E,
   Rule_Change_Y_To_I,
   Rule_Change_Y_To_I_Exception,
   Rule_V_J_K_W_X_never_doubled,
+  Rule_Creole_Th_Stopping_D,
+  Rule_Creole_Th_Stopping_T,
 ]
 
 # check for one letter off: [receive: receiv]

@@ -2,7 +2,7 @@ from .Rule import Rule
 
 class Rule_I_E_Except_C(Rule):
   id = 10
-  rule = "Use ‘i’ before ‘e’, except after ‘c’ and except when sounding like ‘a’"
+  rule = "Use 'i' before 'e', except after 'c' and except when sounding like 'a'"
   examples = "niece, cashier, achieve; neighbour, weigh"
   
   @staticmethod
