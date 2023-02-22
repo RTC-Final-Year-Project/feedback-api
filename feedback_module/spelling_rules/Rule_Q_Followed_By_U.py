@@ -10,6 +10,6 @@ class Rule_Q_Followed_By_U(Rule):
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):
-    if re.search("qu", actual_word, re.I) and not re.search("qu", attempted_word, re.I):
+    if re.search("qu", actual_word, re.I) and (re.search("q|u", attempted_word, re.I) and not re.search("qu", attempted_word, re.I)):
       return False
     return True
