@@ -12,7 +12,6 @@ from .Rule_CK import *
 from .Rule_K import *
 from .Rule_Ending_In_E_Y import *
 from .Rule_Creole_Ending_In_I_N_G import *
-from .Rule_Creole_Th_Stopping import *
 from .Rule_Last_Consonant_Is_Doubled import *
 from .Rule_Plural_By_Adding_S import *
 from .Rule_Drop_E import *
@@ -37,7 +36,6 @@ rules_list = [
   Rule_K,
   Rule_Ending_In_E_Y,
   Rule_Creole_Ending_In_I_N_G,
-  Rule_Creole_Th_Stopping,
   Rule_Last_Consonant_Is_Doubled,
   Rule_Plural_By_Adding_S,
   Rule_Drop_E,
