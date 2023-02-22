@@ -1,7 +1,7 @@
 import re
 from .Rule import Rule
 
-class Rule_S_Never_Follows_X(Rule):
+class Rule_V_J_K_W_X_never_doubled(Rule):
   id = 17
   rule = "The consonants v, j, k, w and x are never doubled"
   
