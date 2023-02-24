@@ -1,28 +1,23 @@
-from flask import Flask, request, jsonify
-from flask_cors import CORS
+from flask import Blueprint, request, jsonify
 from util.validators import FeedBackRequestInputSchema, FeedBackRequestInputException
 import json
 
-feedback_request_input_schema = FeedBackRequestInputSchema()
-
 from feedback_module import FeedbackModule
+
+
+feedback_request_input_schema = FeedBackRequestInputSchema()
 
 FM = FeedbackModule()
 
-def create_app(config={}):
-    app = Flask(__name__)
-    CORS(app)
-    return app
+index_routes = Blueprint('index_routes', __name__)
 
-# API Route
-app = create_app()
 
-@app.route("/", methods=["GET"])
+@index_routes.route("/", methods=["GET"])
 def index_page():
     return "Hello world"
 
 
-@app.route("/feedback", methods=["POST"])
+@index_routes.route("/feedback", methods=["POST"])
 def handle_feedback():
     try:
         data = request.json # get data from form submission
@@ -43,7 +38,7 @@ def handle_feedback():
 
         return jsonify(response), 200
     except FeedBackRequestInputException as err:
-        json_error = json.loads(str(json_errors).replace("\'", "\""))
+        json_error = json.loads(str(json_errors).replace("\"", "\""))
         print("Feedback request error occured", json_error)
         return jsonify(json_error), 400
     except Exception as e:
