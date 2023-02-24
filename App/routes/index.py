@@ -45,3 +45,7 @@ def handle_feedback():
         print("An error occured", e)
         err_msg = dict(messsage = "An unexpected error occured. Please try again.")
         return jsonify(err_msg), 400
+
+@index_routes.route('/healthz', methods=['GET'])
+def render_health_check_path():
+    return {}
