@@ -1,3 +1,4 @@
+from .Rule import *
 from .PluralRules import *
 from .CreoleRules import *
 from .GeneralRules import *

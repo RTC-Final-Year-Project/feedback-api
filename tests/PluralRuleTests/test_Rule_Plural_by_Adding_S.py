@@ -9,17 +9,17 @@ combinations_that_follow_rule = combinations_ignore_rule = [
     ["begins", "begins"],
     ["dogs", "dogs"],
     ["cats", "cats"],
+    ["cars", "casr"],
     ["cups", "cups"],
-  
+    ["vans", "car"]
 ]
 
 # the list of combinations that are supposed to violate this rule (thus being detected by the module checker because isFollowed = False)
 combinations_that_violate_rule = combinations_detect_rule = [
-    ["plan", "planz"],
+    ["plans", "planz"],
     ["dogs", "dog"],
-    ["cats", "cast"],
-    ["cups", "cupz"],
-    ["vans", "car"]
+    ["cats", "catce"],
+    ["cups", "cupz"]
 ]
 
 

@@ -16,6 +16,7 @@ combinations_that_follow_rule = combinations_ignore_rule = [
 combinations_that_violate_rule = combinations_detect_rule = [
     ["buying", "buiing"],
     ["crying", "criing"],
+    ["cried", "cryed"],
     ["trying", "triing"],
 ]
 

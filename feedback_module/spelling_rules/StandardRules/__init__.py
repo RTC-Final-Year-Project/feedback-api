@@ -25,9 +25,9 @@ standard_rules_list = [
   Rule_CK,
   Rule_K,
   Rule_Ending_In_E_Y,
-  Rule_Last_Consonant_Is_Doubled,
   Rule_Drop_E,
   Rule_Change_Y_To_I,
   Rule_Change_Y_To_I_Exception,
   Rule_V_J_K_W_X_never_doubled,
+  Rule_Last_Consonant_Is_Doubled,
 ]

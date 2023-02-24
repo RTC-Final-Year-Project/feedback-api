@@ -1,6 +1,7 @@
 import re
 from .StandardRule import StandardRule
 
+# TODO Improve code. It does the inverse of the Change_Y_To_I_Exception but not the proper alternative
 class Rule_Change_Y_To_I_Exception(StandardRule):
     id = 13.5
     rule = "The rule change a final y to i before a suffix, unless the suffix begins with i has exceptions, 'ier', 'ied','ies','iest'."
