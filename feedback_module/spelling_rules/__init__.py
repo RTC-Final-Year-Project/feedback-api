@@ -5,8 +5,8 @@ from .GeneralRules import *
 from .StandardRules import *
 
 rules_list = [
-  *standard_rules_list,
   *general_rules_list,
+  *standard_rules_list,
   *plural_rules_list,
   *creole_rules_list,
 ]

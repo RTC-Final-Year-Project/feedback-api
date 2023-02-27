@@ -19,8 +19,6 @@ combinations_that_follow_rule = combinations_ignore_rule = [
 # the list of combinations that are supposed to violate this rule (thus being detected by the module checker because isFollowed = False)
 combinations_that_violate_rule = combinations_detect_rule = [
     ["hive", "hyv"],
-    ["judge", "juj"],
-    ["hedge", "hej"],
     ["live", "liv"],
     ["rummage", "rumej"],
     ["positive", "positiv"],

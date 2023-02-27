@@ -20,6 +20,8 @@ combinations_that_violate_rule = combinations_detect_rule = [
     ["judge", "juj"],
     ["judge", "jage"],
     ["judge", "juge"],
+    ["judge", "juj"],
+    ["hedge", "hej"],
     ["judge", "jug"],
     ["judge", "judg"],
 ]
