@@ -2,7 +2,8 @@ from .GeneralRule import GeneralRule
 
 class Rule_Start_With_Capital_Letter(GeneralRule):
   id = 27
-  rule = "Proper nouns start with a capital letter"
+  # rule = "Proper nouns start with a capital letter"
+  rule = "This word is not a proper noun and should not start with a capital letter."
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):
