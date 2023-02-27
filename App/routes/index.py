@@ -38,7 +38,7 @@ def handle_feedback():
 
         return jsonify(response), 200
     except FeedBackRequestInputException as err:
-        json_error = json.loads(str(json_errors).replace("\"", "\""))
+        json_error = json.loads(str(json_errors).replace("\'", "\""))
         print("Feedback request error occured", json_error)
         return jsonify(json_error), 400
     except Exception as e:
