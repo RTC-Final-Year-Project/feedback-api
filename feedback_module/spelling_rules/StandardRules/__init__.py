@@ -3,7 +3,8 @@ from .Rule_S_Never_Follows_X import *
 from .Rule_Ending_Vowel_and_Y_Add_Suffix_Ed_Ing_Only import *
 from .Rule_Q_Followed_By_U import *
 from .Rule_Q_Followed_By_U_Exception import *
-from .Rule_Ending_In_V_Or_J import *
+from .Rule_Ending_In_V import *
+from .Rule_Ending_In_J import *
 from .Rule_Ending_In_D_G_E import *
 from .Rule_CK import *
 from .Rule_K import *
@@ -20,7 +21,8 @@ standard_rules_list = [
   Rule_S_Never_Follows_X,
   Rule_Q_Followed_By_U,
   Rule_Q_Followed_By_U_Exception,
-  Rule_Ending_In_V_Or_J,
+  Rule_Ending_In_V,
+  Rule_Ending_In_J,
   Rule_Ending_In_D_G_E,
   Rule_CK,
   Rule_K,
