@@ -5,7 +5,7 @@ from ...utils import samedifference
 
 class Rule_Change_Y_To_I_Before_Adding_Suffix(StandardRule):
     id = 13
-    rule = "When a root ends in 'y', change the 'y' to 'i' before adding the suffix"
+    definition = "When a root ends in 'y', change the 'y' to 'i' before adding the suffix"
 
     @staticmethod
     def check_if_followed(actual_word, attempted_word):

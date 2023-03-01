@@ -4,7 +4,7 @@ from .PluralRule import PluralRule
 
 class Rule_Plural_Ch_Sh_Z_X_S_O_is_Es(PluralRule):
   id = 6
-  rule = "To form the plural for nouns ending in 'ch', 'sh', 'z', 'x', 's', 'o', you add 'es'"
+  definition = "To form the plural for nouns ending in 'ch', 'sh', 'z', 'x', 's', 'o', you add 'es'"
   examples = "churches, watches, foxes, echoes"
   exceptions = "radios, solos, pianos, photos"
   

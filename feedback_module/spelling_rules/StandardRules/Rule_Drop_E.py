@@ -5,7 +5,7 @@ from ...utils import ldifference
 
 class Rule_Drop_E(StandardRule):
     id = 12
-    rule = "Drop the final 'e' in a word before adding a suffix beginning with a vowel but not before a suffix beginning with a consonant."
+    definition = "Drop the final 'e' in a word before adding a suffix beginning with a vowel but not before a suffix beginning with a consonant."
 
     @staticmethod
     def check_if_followed(actual_word, attempted_word):

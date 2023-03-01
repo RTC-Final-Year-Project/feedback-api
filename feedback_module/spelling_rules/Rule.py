@@ -1,6 +1,6 @@
 class Rule():
   id = -1
-  rule = ""
+  definition = ""
   examples = ""
   exceptions = ""
   

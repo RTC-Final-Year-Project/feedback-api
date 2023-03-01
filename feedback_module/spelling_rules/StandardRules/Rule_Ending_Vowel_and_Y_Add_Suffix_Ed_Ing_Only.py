@@ -4,7 +4,7 @@ from .StandardRule import StandardRule
 
 class Rule_Ending_Vowel_and_Y_Add_Suffix_Ed_Ing_Only(StandardRule):
   id = 23
-  rule = "Words ending in a vowel and y can add the suffix -ed or -ing without making any other change."
+  definition = "Words ending in a vowel and y can add the suffix -ed or -ing without making any other change."
   examples="buying, delaying, employed"
   
   @staticmethod

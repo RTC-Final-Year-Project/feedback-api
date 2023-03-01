@@ -5,7 +5,7 @@ from ...utils import samedifference
 
 class Rule_Change_Y_To_I_Unless_Vowel_Before(StandardRule):
     id = 13.3
-    rule = "When a root ends in 'y', keep the 'y' if a vowel comes before it"
+    definition = "When a root ends in 'y', keep the 'y' if a vowel comes before it"
 
     @staticmethod
     def check_if_followed(actual_word, attempted_word):

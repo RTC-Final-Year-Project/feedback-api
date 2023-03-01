@@ -2,7 +2,7 @@ from ..Rule import Rule
 
 class CreoleRule(Rule):
   id = -5
-  rule = ""
+  definition = ""
   examples = ""
   exception = ""
   

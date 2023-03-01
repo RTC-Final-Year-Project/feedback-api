@@ -4,7 +4,7 @@ from .StandardRule import StandardRule
 
 class Rule_Q_Followed_By_U(StandardRule):
   id = 15
-  rule = "The letter 'q' is usually followed by the letter 'u'"
+  definition = "The letter 'q' is usually followed by the letter 'u'"
   examples = "queen, earthquake, quick"
   exceptions = "Qatar, niqab"
   

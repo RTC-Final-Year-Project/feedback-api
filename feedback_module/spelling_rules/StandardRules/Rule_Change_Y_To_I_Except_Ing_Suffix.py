@@ -5,7 +5,7 @@ from ...utils import samedifference
 
 class Rule_Change_Y_To_I_Except_Ing_Suffix(StandardRule):
     id = 13.6
-    rule = "When a root ends in 'y', keep the 'y' if adding the suffix '-ing'"
+    definition = "When a root ends in 'y', keep the 'y' if adding the suffix '-ing'"
 
     @staticmethod
     def check_if_followed(actual_word, attempted_word):

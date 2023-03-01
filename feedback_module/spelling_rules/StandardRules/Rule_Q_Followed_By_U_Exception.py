@@ -5,7 +5,7 @@ from .StandardRule import StandardRule
 
 class Rule_Q_Followed_By_U_Exception(StandardRule):
     id = 15.5
-    rule = "The letter 'q' is usually followed by the letter 'u', but this word is an exception."
+    definition = "The letter 'q' is usually followed by the letter 'u', but this word is an exception."
     examples = "Qatar, niqab"
 
     @staticmethod

@@ -2,7 +2,7 @@ from ..Rule import Rule
 
 class PluralRule(Rule):
   id = -4
-  rule = ""
+  definition = ""
   examples = ""
   exception = ""
   
