@@ -12,6 +12,7 @@ combinations_that_follow_rule = combinations_ignore_rule = [
     ["father", "father"],
     ["together", "together"],
     ["them", "them"],
+    ["stealthily", "delfully"],
 ]
 
 # the list of combinations that are supposed to violate this rule (thus being detected by the module checker because isFollowed = False)

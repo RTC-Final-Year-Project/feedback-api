@@ -14,6 +14,7 @@ combinations_that_follow_rule = combinations_ignore_rule = [
     ["earth", "earth"],
     ["birth", "birth"],
     ["thank", "thank"],
+    ["photosynthesis", "photosynsis"],
 ]
 
 # the list of combinations that are supposed to violate this rule (thus being detected by the module checker because isFollowed = False)
