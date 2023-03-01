@@ -2,7 +2,7 @@ import re
 from .StandardRule import StandardRule
 
 class Rule_Ending_In_J(StandardRule):
-  id = 26.5
+  id = 26.6
   rule = " Words don't usually end in 'v' or 'j', so there is likely a silent 'e' at the end"
   
   @staticmethod
