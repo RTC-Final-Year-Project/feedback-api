@@ -16,6 +16,7 @@ from .Rule_Change_Y_To_I_Except_Ing_Suffix import *
 from .Rule_Change_Y_To_I_Unless_Vowel_Before import *
 from .Rule_V_J_K_W_X_never_doubled import *
 from .Rule_One_Syllable_Two_Vowel import *
+from .Rule_Long_Vowel import *
 
 standard_rules_list = [
   Rule_I_E_Except_C,
@@ -36,4 +37,5 @@ standard_rules_list = [
   Rule_V_J_K_W_X_never_doubled,
   Rule_Last_Consonant_Is_Doubled,
   Rule_One_Syllable_Two_Vowel,
+  Rule_Long_Vowel
 ]
