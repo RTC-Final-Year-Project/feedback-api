@@ -1,31 +1,32 @@
 from ..AssessTestCases import AssessTestCases
 
-from feedback_module.spelling_rules import Rule_Long_E_Sound
+from feedback_module.spelling_rules import Rule_CE_Sound_Like_S
 
 
-rule = Rule_Long_E_Sound
+rule = Rule_CE_Sound_Like_S
 
 # the list of combinations that are supposed to follow this rule (thus being ignored by the module checker because isFollowed = True)
 combinations_that_follow_rule = combinations_ignore_rule = [
-    ["baby", "baby"],
-    ["penny", "penny"],
-    ["candy", "candy"],
-    ["hurry", "hurry"],
+    ["peace", "peace"],
+    ["piece", "piece"],
+    ["fleece", "fleece"],
+    ["sentence", "sentence"],
 ]
 
 # the list of combinations that are supposed to violate this rule (thus being detected by the module checker because isFollowed = False)
 combinations_that_violate_rule = combinations_detect_rule = [
-    ["penny", "pennee"],
-    ["candy", "candee"],
-    ["hurry", "hurree"],
+    ["peace", "peas"],
+    ["piece", "pies"],
+    ["fleece", "flees"],
+    ["sentence", "sentens"],
 ]
 
-class Rule_Long_E_Sound_Unit_Tests(AssessTestCases.UnitTestCases):
+class Rule_CE_Sound_Like_S_Unit_Tests(AssessTestCases.UnitTestCases):
     rule = rule
     combinations_that_follow_rule = combinations_that_follow_rule
     combinations_that_violate_rule = combinations_that_violate_rule
 
-class Rule_Long_E_Sound_Integration_Tests(AssessTestCases.IntegrationTestCases):
+class Rule_CE_Sound_Like_S_Integration_Tests(AssessTestCases.IntegrationTestCases):
     rule = rule
     combinations_ignore_rule = combinations_ignore_rule
     combinations_detect_rule = combinations_detect_rule

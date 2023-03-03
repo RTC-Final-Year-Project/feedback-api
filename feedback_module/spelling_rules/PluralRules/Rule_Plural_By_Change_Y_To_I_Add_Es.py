@@ -7,7 +7,7 @@ class Rule_Plural_By_Change_Y_To_I_Add_Es(PluralRule):
 
     @staticmethod
     def check_if_followed(actual_word, attempted_word):
-        if not attempted_word.endswith('ies') and actual_word[-4] not in ['a', 'e', 'i', 'o', 'u']:
+        if not attempted_word.endswith('ies') and actual_word[-4] not in ['a', 'e', 'i', 'o', 'u'] and actual_word.endswith('ies'):
             return  False
         return True
        
