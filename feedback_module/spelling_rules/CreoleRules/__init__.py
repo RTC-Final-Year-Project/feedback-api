@@ -5,6 +5,7 @@ from .Rule_Creole_Sound_Omission_ST_To_S import Rule_Creole_Sound_Omission_ST_To
 from .Rule_Creole_Sound_Omission_CT_To_C import Rule_Creole_Sound_Omission_CT_To_C
 from .Rule_Creole_Sound_Omission_FT_To_F import Rule_Creole_Sound_Omission_FT_To_F
 from .Rule_Creole_Sound_Omission_ND_To_N import Rule_Creole_Sound_Omission_ND_To_N
+from .Rule_Creole_Sound_Omission_PT_To_P import Rule_Creole_Sound_Omission_PT_To_P
 
 creole_rules_list = [
     Rule_Creole_Ending_In_Ing,
@@ -14,4 +15,5 @@ creole_rules_list = [
     Rule_Creole_Sound_Omission_CT_To_C,
     Rule_Creole_Sound_Omission_FT_To_F,
     Rule_Creole_Sound_Omission_ND_To_N,
+    Rule_Creole_Sound_Omission_PT_To_P,
 ]
