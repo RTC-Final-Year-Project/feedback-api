@@ -2,7 +2,6 @@ from ..AssessTestCases import AssessTestCases
 
 from feedback_module.spelling_rules import Rule_Ending_In_E_Y
 
-
 rule = Rule_Ending_In_E_Y
 
 # the list of combinations that are supposed to follow this rule (thus being ignored by the module checker because isFollowed = True)
