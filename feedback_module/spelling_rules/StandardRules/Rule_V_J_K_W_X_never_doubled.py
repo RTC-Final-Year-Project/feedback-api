@@ -3,7 +3,7 @@ from .StandardRule import StandardRule
 
 class Rule_V_J_K_W_X_never_doubled(StandardRule):
   id = 17
-  rule = "The consonants v, j, k, w and x are never doubled"
+  definition = "The consonants v, j, k, w and x are never doubled"
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):

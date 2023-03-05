@@ -3,7 +3,7 @@ from .CreoleRule import CreoleRule
 
 class Rule_Creole_Ending_In_Ing(CreoleRule):
   id = 32
-  rule = "Words ending with 'ing' should not be pronounced with an 'in' sound"
+  definition = "Words ending with 'ing' should not be pronounced with an 'in' sound"
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):

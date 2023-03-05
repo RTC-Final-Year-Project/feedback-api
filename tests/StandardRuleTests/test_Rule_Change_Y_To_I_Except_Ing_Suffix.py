@@ -1,31 +1,31 @@
 from ..AssessTestCases import AssessTestCases
 
-from feedback_module.spelling_rules import Rule_Change_Y_To_I
+from feedback_module.spelling_rules import Rule_Change_Y_To_I_Except_Ing_Suffix
 
-rule = Rule_Change_Y_To_I
+rule = Rule_Change_Y_To_I_Except_Ing_Suffix
 
 combinations_that_follow_rule = combinations_ignore_rule = [
-    ["hello", "world"],
-    ["happiness", "happiness"],
-    ["buying", "buying"],
-    ["crying", "crying"],
+    ["flier", "flier"], 
+    ["uglier", "uglier"], 
+    ["relied", "relied"],
+    ["funniest", "funniest"],
+    ["tries", "tries"],
     ["trying", "trying"],
 ]
 
 # the list of combinations that are supposed to violate this rule (thus being detected by the module checker because isFollowed = False)
 combinations_that_violate_rule = combinations_detect_rule = [
-    ["buying", "buiing"],
-    ["crying", "criing"],
-    ["cried", "cryed"],
-    ["trying", "triing"],
+    ["crying", "criing"], 
+    ["studying", "studiing"], 
+    ["playing", "plaiing"], 
 ]
 
-class Rule_Change_Y_To_I_Unit_Tests(AssessTestCases.UnitTestCases):
+class Rule_Change_Y_To_I_Except_Ing_Suffix_Exception_Unit_Tests(AssessTestCases.UnitTestCases):
     rule = rule
     combinations_that_follow_rule = combinations_that_follow_rule
     combinations_that_violate_rule = combinations_that_violate_rule
 
-class Rule_Change_Y_To_I_Integration_Tests(AssessTestCases.IntegrationTestCases):
+class Rule_Change_Y_To_I_Except_Ing_Suffix_Exception_Integration_Tests(AssessTestCases.IntegrationTestCases):
     rule = rule
     combinations_ignore_rule = combinations_ignore_rule
     combinations_detect_rule = combinations_detect_rule

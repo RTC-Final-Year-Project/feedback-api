@@ -4,7 +4,7 @@ from .StandardRule import StandardRule
 
 class Rule_Ending_In_E_Y(StandardRule):
   id = 24
-  rule = "When the letters 'ey' are at the end of a 2 syllable word, they usually stand for the long e sound."
+  definition = "When the letters 'ey' are at the end of a 2 syllable word, they usually stand for the long e sound."
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):

@@ -2,7 +2,7 @@ from ..Rule import Rule
 
 class StandardRule(Rule):
   id = -3
-  rule = ""
+  definition = ""
   examples = ""
   exception = ""
   
