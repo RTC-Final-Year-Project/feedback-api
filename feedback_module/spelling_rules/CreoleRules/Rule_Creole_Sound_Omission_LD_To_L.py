@@ -2,7 +2,7 @@
 from .CreoleRule import CreoleRule
 
 class Rule_Creole_Sound_Omission_LD_To_L(CreoleRule):
-  id = 34
+  id = 38
   definition = "Final sound omission - ‘ld’ to ‘l’"
  
   
