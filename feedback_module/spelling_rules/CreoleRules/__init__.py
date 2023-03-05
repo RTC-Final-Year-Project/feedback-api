@@ -6,7 +6,7 @@ from .Rule_Creole_Sound_Omission_CT_To_C import Rule_Creole_Sound_Omission_CT_To
 from .Rule_Creole_Sound_Omission_FT_To_F import Rule_Creole_Sound_Omission_FT_To_F
 from .Rule_Creole_Sound_Omission_ND_To_N import Rule_Creole_Sound_Omission_ND_To_N
 from .Rule_Creole_Sound_Omission_PT_To_P import Rule_Creole_Sound_Omission_PT_To_P
-from .Rule_Creole_Sound_Omission_ID_To_I import Rule_Creole_Sound_Omission_ID_To_I
+from .Rule_Creole_Sound_Omission_LD_To_L import Rule_Creole_Sound_Omission_LD_To_L
 from .Rule_Creole_Sound_Omission_CT_To_C_Exception import Rule_Creole_Sound_Omission_CT_To_C_Exception
 
 creole_rules_list = [
@@ -18,6 +18,6 @@ creole_rules_list = [
     Rule_Creole_Sound_Omission_FT_To_F,
     Rule_Creole_Sound_Omission_ND_To_N,
     Rule_Creole_Sound_Omission_PT_To_P,
-    Rule_Creole_Sound_Omission_ID_To_I,
+    Rule_Creole_Sound_Omission_LD_To_L,
     Rule_Creole_Sound_Omission_CT_To_C_Exception,
 ]
