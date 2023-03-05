@@ -20,6 +20,7 @@ combinations_that_violate_rule = combinations_detect_rule = [
     ["falling", "fallin"],
     ["falling", "falln"],
     ["telling", "tellin"],
+    ["something", "somthin"],
 ]
 
 class Rule_Creole_Ending_In_Ing_Unit_Tests(AssessTestCases.UnitTestCases):

@@ -9,23 +9,29 @@ rule = Rule_Q_Followed_By_U
 combinations_that_follow_rule = combinations_ignore_rule = [
     ["hello", "world"],
     ["duck", "dock"],
-    ["queen", "queen"],
-    ["quick", "kwick"],
     ["earthquake", "earthquake"],
+    ["quick", "kwick"],
     ["quick", "qucki"],
     ["quick", "quik"],
-    ["quail", "kwhale"],
+    ["quail", "kwale"],
+    ["quick", "cwick"],
+    ["quick", "kwiq"],
+    ["niqab", "niqab"],
+    ["niqab", "niquab"],
+    ["Qatar", "Qatar"],
+    ["Qatar", "Quatar"],
+    ["unique", "unik"],
 ]
 
 # the list of combinations that are supposed to violate this rule (thus being detected by the module checker because isFollowed = False)
 combinations_that_violate_rule = combinations_detect_rule = [
     ["quick", "qwic"],
-    ["quick", "uqick"],
     ["earthquake", "earthqwake"],
     ["unique", "uniqe"],
-    ["unique", "unik"],
     ["queen", "qween"],
     ["quail", "qwhale"],
+    ["quail", "qwhale"],
+    ["quail", "qwail"],
 ]
 
 class Rule_Q_Followed_By_U_Unit_Tests(AssessTestCases.UnitTestCases):

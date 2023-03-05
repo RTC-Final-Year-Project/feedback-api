@@ -10,6 +10,11 @@ class Rule_Q_Followed_By_U(StandardRule):
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):
-    if re.search("qu", actual_word, re.I) and (re.search("q|u", attempted_word, re.I) and not re.search("qu", attempted_word, re.I)):
-      return False
+    if re.search("qu", actual_word, re.I) and (re.search("q", attempted_word, re.I) and not re.search("qu", attempted_word, re.I)):
+      # extra logic needed for cases where the q is randomly placed eg: quick --> kwiq - should not violate this rule
+      j = actual_word.find('qu')
+      if (j+1) <= len(attempted_word)-1:
+        if (attempted_word[j]=='q') and not (attempted_word[j+1]=='u'):
+          return False
     return True
+  
