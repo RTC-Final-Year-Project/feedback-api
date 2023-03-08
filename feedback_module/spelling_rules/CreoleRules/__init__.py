@@ -10,6 +10,10 @@ from .Rule_Creole_Sound_Omission_LD_To_L import Rule_Creole_Sound_Omission_LD_To
 from .Rule_Creole_Sound_Omission_CT_To_C_Exception import Rule_Creole_Sound_Omission_CT_To_C_Exception
 from .Rule_Creole_Sound_Omission_LD_To_L_Exception import Rule_Creole_Sound_Omission_LD_To_L_Exception
 from .Rule_Creole_Wh_To_W import Rule_Creole_Wh_To_W
+from .Rule_Creole_Y_Before_A_Sound import Rule_Creole_Y_Before_A_Sound
+from .Rule_Creole_Own_To_Ong import Rule_Creole_Own_To_Ong
+from .Rule_Creole_Oun_To_Ong import Rule_Creole_Oun_To_Ong
+from .Rule_Creole_Omitted_R_Sound import Rule_Creole_Omitted_R_Sound
 
 creole_rules_list = [
     Rule_Creole_Ending_In_Ing,
@@ -24,4 +28,8 @@ creole_rules_list = [
     Rule_Creole_Sound_Omission_CT_To_C_Exception,
     Rule_Creole_Sound_Omission_LD_To_L_Exception,
     Rule_Creole_Wh_To_W,
+    Rule_Creole_Y_Before_A_Sound,
+    Rule_Creole_Own_To_Ong,
+    Rule_Creole_Oun_To_Ong,
+    Rule_Creole_Omitted_R_Sound,
 ]
