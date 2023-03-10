@@ -16,6 +16,9 @@ combinations_that_follow_rule = combinations_ignore_rule = [
     ["adulteration", "adulteration"],
     ["celebratory", "celebratory"],
     ["famous", "famous"],
+    # Added:
+    ["manageable", "managable"],
+    ["fleeing", "fleing"], 
 ]
 
 # the list of combinations that are supposed to violate this rule (thus being detected by the module checker because isFollowed = False)
@@ -23,8 +26,9 @@ combinations_that_violate_rule = combinations_detect_rule = [
     ["arguing", "argueing"],
     ["riding", "rideing"],
     ["loving", "loveing"],
+    # Added:
+    ["lovable", "loveable"],    
 ]
-
 
 
 class Rule_Drop_E_Unit_Tests(AssessTestCases.UnitTestCases):
