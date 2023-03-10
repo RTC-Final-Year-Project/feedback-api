@@ -13,7 +13,6 @@ class SpellingActionData():
         self.fuzzy_estimate = 0
         self.actions_attempted = 0
         self.consec_times_rule_violated = 0
-    pass
 
 
 class SpellingAttemptData():
@@ -23,6 +22,5 @@ class SpellingAttemptData():
         self.times_attempted = 0
         self.times_correct = 0
         self.rules_violated = []
-    pass
 
 
