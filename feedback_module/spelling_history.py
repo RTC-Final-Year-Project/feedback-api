@@ -1,3 +1,5 @@
+from typing import Dict
+
 class SpellingActionData():
     def __init__(self, spelling_word, attempted_spelling):
         self.attempt_id = ""
@@ -26,8 +28,8 @@ class SpellingAttemptData():
         self.rules_violated = []
 
 
-action_history = {}
-attempt_history = {}
+action_history: Dict[str, SpellingActionData] = {}
+attempt_history: Dict[str, SpellingAttemptData] = {}
 
 max_actions_attempted = 7
 max_consec_times_rule_violated = 3
@@ -61,7 +63,7 @@ def get_word_action_list(student_id, spelling_word):
     
     return word_list
 
-def get_student_last_word_action(student_id, spelling_word):
+def get_student_last_word_action(student_id, spelling_word) -> SpellingActionData:
     # TODO filter by attempt_id
     action_list = get_word_action_list(student_id, spelling_word)
     

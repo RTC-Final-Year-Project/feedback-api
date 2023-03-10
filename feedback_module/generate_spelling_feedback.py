@@ -58,12 +58,6 @@ def process_corrective_feedback(spelling_word, attempted_spelling, violated_rule
         else:
             curr_word_action.consec_times_rule_violated = 1
     
-    # stop processing after they get same rule wrong too many times in sequence
-    if curr_word_action.consec_times_rule_violated > max_consec_times_rule_violated:
-        curr_word_action.just_give_answer = True
-    # stop processing after they get same word wrong too many times in this attempt
-    if curr_word_action.actions_attempted > max_actions_attempted:
-        curr_word_action.just_give_answer = True
     
         
     
@@ -80,10 +74,47 @@ def process_corrective_feedback(spelling_word, attempted_spelling, violated_rule
     elif rule_violated_count == 3:
         pass # generate feedback with rule hint if available or alternative definition
     
-    # if rule violated more than thrice, just give answer would be true
-    if curr_word_action.just_give_answer:
+    # if rule violated more than consec limit, just give answer should be true
+    # stop processing after they get same rule wrong too many times in sequence
+    if curr_word_action.consec_times_rule_violated > max_consec_times_rule_violated:
         feedback = generate_answer_feedback(spelling_word, curr_word_action.main_violated_rule_id)
+        curr_word_action.just_give_answer = True
     
+    
+    # If multiple rules previously violated and less rules violated this time (started at like 3-4 but only 1 now): 	Give hopeful feedback.
+    less_rule_violations_now = curr_word_action.num_violated_rules < last_word_action.num_violated_rules
+    if less_rule_violations_now:
+        feedback = generate_hopeful_feedback(spelling_word)
+        
+    # if word misspelled more than limit, just give answer should also be true
+    # stop processing after they get same word wrong too many times in this attempt
+    if curr_word_action.actions_attempted > max_actions_attempted:
+        feedback = generate_answer_feedback(spelling_word)
+        curr_word_action.just_give_answer = True
+    
+    # if last word was flagged as just give answer, be it the same here
+    if last_word_action.just_give_answer:
+        feedback = generate_answer_feedback(spelling_word)
+        curr_word_action.just_give_answer = True
+    
+    if curr_word_action.spelled_correctly:
+        # If word flagged as “just give answer” and correct spelling:
+        # Give confirmation response. e.g. “That’s correct. No worries, you’re still learning!”
+        if curr_word_action.just_give_answer:
+            feedback = generate_confirmation_response(spelling_word)
+        # elif
+
+    # TODO If proficiency for this word is low, and got higher, upon correct spelling:
+	# Give congratulatory response: e.g. “Excellent! You’re getting better at this word!”
+
+
+def generate_congratulatory_response():
+    # e.g. “Excellent! You’re getting better at this word!”
+    pass
+
+def generate_confirmation_response():
+    # e.g. “That’s correct. No worries, you’re still learning!”
+    pass
 
 def generate_hopeful_feedback():
     pass
