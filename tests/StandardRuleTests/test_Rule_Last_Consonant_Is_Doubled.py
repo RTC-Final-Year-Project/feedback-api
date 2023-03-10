@@ -20,6 +20,9 @@ combinations_that_violate_rule = combinations_detect_rule = [
     ["stopped", "stoped"],
     ["fattest", "fatest"],
     ["happy", "hapy"],
+    ["stopping", "stoping"],
+    ["occurrence", "occurence"],
+    ["swimming", "swiming"],
 ]
 
 
