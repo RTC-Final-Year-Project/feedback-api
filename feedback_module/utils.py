@@ -42,3 +42,6 @@ def bdifference(string1, string2):
         return [len(string1), (None, string2[len(string2) - len(string1) - 1])]
 
     return [-1, (None, None)]
+
+def decapitalize_first_letter(sentence):
+  return "".join([sentence[:1].lower(), sentence[1:]]) 

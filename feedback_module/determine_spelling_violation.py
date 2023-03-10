@@ -31,3 +31,12 @@ def determine_violated_rules(actual_word, attempted_word):
             violated_rules.append(rule)
 
     return violated_rules if len(violated_rules) else [Rule]
+
+def get_rule_by_id(rule_id = None):
+    if rule_id == None:
+        return None
+    for rule in rules_list:
+        if rule.id == rule_id:
+            return rule
+    
+    return Rule
