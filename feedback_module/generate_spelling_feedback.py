@@ -1,4 +1,4 @@
-from .spelling_history import get_word_action_list, get_student_last_word_action, SpellingActionData, max_actions_attempted, max_consec_times_rule_violated
+from .spelling_history import get_word_action_list, get_student_last_word_action, SpellingActionData, max_actions_attempted, max_consec_times_rule_violated, add_student_action
 from .determine_spelling_violation import get_rule_by_id
 from .utils import decapitalize_first_letter
 
@@ -103,10 +103,21 @@ def process_corrective_feedback(spelling_word, attempted_spelling, violated_rule
         if curr_word_action.just_give_answer:
             feedback = generate_confirmation_response(spelling_word)
         # elif
+        # calculate_proficiency()
+        
+    # if previous action was not "just give answer", add to history
+    if not last_word_action.just_give_answer:
+        add_student_action(student_id, curr_word_action)
+
+        
 
     # TODO If proficiency for this word is low, and got higher, upon correct spelling:
 	# Give congratulatory response: e.g. “Excellent! You’re getting better at this word!”
 
+
+
+def calculate_proficiency(student_id, spelling_word):
+    pass
 
 def generate_congratulatory_response():
     # e.g. “Excellent! You’re getting better at this word!”
