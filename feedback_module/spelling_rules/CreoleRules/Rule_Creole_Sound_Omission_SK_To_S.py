@@ -1,7 +1,7 @@
 
 from .CreoleRule import CreoleRule
 
-class Rule_Creole_Sound_Omission_ST_To_S(CreoleRule):
+class Rule_Creole_Sound_Omission_SK_To_S(CreoleRule):
   id = 39
   definition = "Final sound omission - ‘sk’ to ‘s’"
   
