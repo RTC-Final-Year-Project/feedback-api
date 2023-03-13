@@ -20,7 +20,7 @@ from .Rule_Creole_Our_To_Or import Rule_Creole_Our_To_Or
 from .Rule_Creole_Ise_To_Ize import Rule_Creole_Ise_To_Ize
 from .Rule_Creole_Ture_To_Cha import Rule_Creole_Ture_To_Cha
 from .Rule_Creole_Ence_To_Ance import Rule_Creole_Ence_To_Ance
-from .Rule_Creole_Ture_To_Tya import Rule_Creole_Ture_To_Tya
+# from .Rule_Creole_Ture_To_Tya import Rule_Creole_Ture_To_Tya
 
 creole_rules_list = [
     Rule_Creole_Ending_In_Ing,
@@ -45,5 +45,5 @@ creole_rules_list = [
     Rule_Creole_Ise_To_Ize,
     Rule_Creole_Ture_To_Cha,
     Rule_Creole_Ence_To_Ance,
-    Rule_Creole_Ture_To_Tya,
+    # Rule_Creole_Ture_To_Tya,
 ]
