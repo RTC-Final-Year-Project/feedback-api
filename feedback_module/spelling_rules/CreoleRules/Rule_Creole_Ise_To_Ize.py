@@ -3,7 +3,7 @@ from .CreoleRule import CreoleRule
 
 class Rule_Creole_Ise_To_Ize(CreoleRule):
   id = 46
-  definition = "Use of ise rather than ize"
+  definition = "Use of ize rather than ise"
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):

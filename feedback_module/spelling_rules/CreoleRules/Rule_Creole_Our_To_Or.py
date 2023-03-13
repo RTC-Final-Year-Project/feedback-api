@@ -3,7 +3,7 @@ from .CreoleRule import CreoleRule
 
 class Rule_Creole_Our_To_Or(CreoleRule):
   id = 45
-  definition = "Use of our vs or"
+  definition = "Use of or rather than our"
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):
