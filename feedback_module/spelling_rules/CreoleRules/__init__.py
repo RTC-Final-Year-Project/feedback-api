@@ -15,6 +15,7 @@ from .Rule_Creole_Own_To_Ong import Rule_Creole_Own_To_Ong
 from .Rule_Creole_Oun_To_Ong import Rule_Creole_Oun_To_Ong
 from .Rule_Creole_Omitted_R_Sound import Rule_Creole_Omitted_R_Sound
 from .Rule_Creole_Sound_Omission_SK_To_S import Rule_Creole_Sound_Omission_SK_To_S
+from .Rule_Creole_Word_Shortening import Rule_Creole_Word_Shortening
 
 creole_rules_list = [
     Rule_Creole_Ending_In_Ing,
@@ -34,4 +35,5 @@ creole_rules_list = [
     Rule_Creole_Oun_To_Ong,
     Rule_Creole_Omitted_R_Sound,
     Rule_Creole_Sound_Omission_SK_To_S,
+    Rule_Creole_Word_Shortening
 ]
