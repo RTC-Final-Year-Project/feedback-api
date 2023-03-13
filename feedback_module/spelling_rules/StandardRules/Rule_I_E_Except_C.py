@@ -4,6 +4,7 @@ class Rule_I_E_Except_C(StandardRule):
   id = 10
   definition = "Use 'i' before 'e', except after 'c' and except when sounding like 'a'"
   examples = "niece, cashier, achieve; neighbour, weigh"
+  hint = "Change your 'ei' to 'ie' or 'ie' to 'ei'."
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):
