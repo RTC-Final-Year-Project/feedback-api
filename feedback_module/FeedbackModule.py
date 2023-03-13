@@ -29,7 +29,17 @@ class FeedbackModule():
 
         student_action_list = get_student_action_list(student_id)
 
-        corrective_feedback = process_corrective_feedback(spelling_word, attempted_spelling, violated_rules, student_id, student_age, student_action_list)
+        session_id = 9
+        corrective_feedback = process_corrective_feedback(session_id, spelling_word, attempted_spelling, violated_rules, student_id, student_age, student_action_list)
+        
+        return dict(
+            spelling_word=spelling_word,
+            attempted_spelling=attempted_spelling,
+            student_id=student_id,
+            num_word_attempts = 2,
+            attempt_id = 4,
+            emotive_feedback = corrective_feedback
+        )
         
         
         
