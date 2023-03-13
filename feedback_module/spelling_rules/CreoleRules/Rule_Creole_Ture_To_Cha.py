@@ -3,7 +3,7 @@ from .CreoleRule import CreoleRule
 
 class Rule_Creole_Ture_To_Cha(CreoleRule):
   id = 47
-  definition = "Use of cha rather than ise"
+  definition = "Use of cha rather than ture"
   
   @staticmethod
   def check_if_followed(actual_word, attempted_word):
